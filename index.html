@@ -3,80 +3,68 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="index.css">
-        <title>멋쟁이사자처럼</title>
+        <title>자기소개 페이지</title>
     </head>
     <body>
-        <a href="https://kmu-likelion13.site/" target="blank">멋쟁이사자처럼 바로가기</a>
+        <!-- <a href="https://kmu-likelion13.site/" target="blank">멋쟁이사자처럼 바로가기</a> -->
+        <header></header>
         <br>
-        <img src="lion.png" alt="이미지 없음" title="사자">
-        <h1>LIKE LION UNIV</h1>
-        <h3>회원가입</h3>
+        <div class="main">
+            <img id = "main_image" src="main_image.jpg" alt="이미지 없음" title="도둑깜자">
+        </div>
+        
+        <div class="tabs">
+            <a href="#intro">
+                <img src="heart.png">Intro
+            </a>
+            <a href="#interests">
+                <img src="lens.png">Interest
+            </a>
+            <a href="#playlist">
+                <img src="clover.png">Music
+            </a>
+        </div>
 
-        <!-- 서버주소, 포스트 입력해야함 -->
-        <form action="" method="">
-            <fieldset>
-                <legend>기본정보</legend>
-                <label for="userid">아이디:
-                    <input type="text" id="userid" placeholder="아이디는 8자 이상입니다.">
-                </label>
+        <div class="content">
+            <section id="intro">
+                <h2>👨🏻소개</h2>
+                <p>안녕하세요! 저는 소프트웨어학부 20학번 김준범입니다.</p>
+                <p>멋사에는 백엔드 파트로 들어왔습니다. 모두 만나게 되어서 반갑습니다.</p>
+                <p>낯을 가리지만 노력하고 있으니 편하게 말 걸어 주세요!</p>
+                <p>평소에 자주 쓰는 이모티콘인 깜자로 꾸며봤습니다. 귀엽지 않나요?</p>
+            </section>
+    
+            <section id="interests">
+                <h2>💻백준</h2>
+                <a href="https://solved.ac/profile/gs1237" target="_blank">
+                    <img src="http://mazassumnida.wtf/api/v2/generate_badge?boj=gs1237"  />
+                </a>
+                <p>요즘 1일 1백준을 하기 위해 애쓰고 있습니다. 위 사진을 클릭하면 솔브드 페이지로 이동합니다. 잘 지키고 있나 확인해 주세요!</p>
+                <br><br><br><br><br>
 
+                <h2>🏃‍♂️러닝</h2>
+                <img src="running.png" alt="이미지 없음" title="나이키런">
+                <p>취미로 러닝을 하고 있습니다. 기분이 답답할 때 한 번씩 뛰면 개운하거든요. 20~22시 사이에 운동장에서 뛰고 있는 저를 발견하면 반갑게 인사해 주세요.</p>
+                <p>올해 1000km를 찍는게 목표예요!</p>
+                <br><br><br><br><br>
+
+                <h2>🕹️게임</h2>
+                <p>가장 오래, 많이 했었던 취미입니다. 스팀이나 블리자드 게임도 하지만 요즘은 롤만 하게 되더라구요. 과제를 마감 직전까지 미루는 주범이기도 합니다..</p>
+                <p>♬과제♬안하고 롤★하★고★있★는★지 감시하기☞☞
+                    <a href="https://www.op.gg/summoners/kr/Silbet-KR1"  target="_blank">🙄</a>
+                </p>
+                <br><br><br><br><br>
+
+                <h2>🎹건반</h2>
+                <p>심심할때 두드리면 1시간 뚝딱입니다. 어떤 악기든 합주하는 것을 좋아해서 관심 있으신 분은 연락 주세요 ㅎㅎ</p>
+            </section>
+    
+            <section id="playlist">
+                <h2>🎵플레이리스트</h2>
+                <p>인디 감성 노래를 좋아합니다. 잔잔하면서도 신나는 노래가 좋아요 :></p>
                 <br>
-                <label for="password">비밀번호:
-                    <input type="password" id="password" placeholder="비밀번호는 10자 이상입니다.">
-                </label>
-
-                <br>
-                성별 :
-                <label for="man">남자
-                    <input type="radio" id="man">
-                </label>
-                <label for="girl">여자
-                    <input type="radio" id="girl">
-                </label>                
-            </fieldset>
-
-            <fieldset>
-                <legend>
-                    부가정보
-                </legend>
-                취미 :
-                <label for="coding">코딩
-                    <input type="checkbox" id="coding">
-                </label>
-                <label for="movie">영화감상
-                    <input type="checkbox" id="movie">
-                </label>
-                <label for="music">음악감상
-                    <input type="checkbox" id="music">
-                </label>
-                <label for="reading">독서
-                    <input type="checkbox" id="reading">
-                </label>
-                <label for="sport">운동
-                    <input type="checkbox" id="sport">
-                </label>
-
-                <br>
-                프로필사진:
-                <input type="file">
-
-                <br>
-                사는지역:
-                <select name="region">
-                    <option value="">서울</option>
-                    <option value="">인천</option>
-                    <option value="">대구</option>
-                </select>
-
-                <br>
-                자기소개:
-                <textarea name="intro" rows="5" cols="50">가벼운 자기소개를 입력해주세요.</textarea>
-                
-                <br>
-                <button class="button1">가입하기</button>
-                <button class="button2">다시작성</button>
-            </fieldset>
-        </form>
-         
+                <img src="music.png" alt="이미지 없음" title="플레이리스트"/>
+            </section>
+        </div>
     </body>
 </html>

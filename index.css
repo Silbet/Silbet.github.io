@@ -1,47 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
 body {
-    border: 8px solid orange;
-    padding: 30px;
+    background: rgba(255, 226, 175, 0.159);
 }
 
-a {
-    color: blue;
+h2 {
+    text-align: center;
+    font-size: 35px;
 }
 
-img {
-    width: 200px;
+#lol {
+    display: inline;
+    width: 30px;
+}   
+
+.tabs {
+    border-width: 2px 0px;
+    border-style: ridge;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 20px;
+    font-family: "Winky Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+      
+}
+
+.tabs a {
+    display: flex; 
+    align-items: center;
+    gap: 10px;
+    font-size: 35px;
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    /* border: 2px solid #ccc; */
+    /* border-radius: 10px; */
+    padding: 10px 15px;
+    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.tabs a:hover {
+    background-color: black;
+    color: white;
+}
+
+.content {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity : 0.7;
+    
+}
+
+.content section {
+    display: none;
+    margin-top: 1ch;
+    max-width: 600px; /* 기존보다 넓게 조정 */
+    margin-left: auto;
+    margin-right: auto;
+    
+    background: white; /* 완전 흰색 배경 */
+    padding: 30px; /* 내부 여백을 늘려서 텍스트와 여백 확보 */
+    border-radius: 15px; /* 더 부드러운 둥근 테두리 */
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1); /* 그림자로 떠 있는 느낌 추가 */
+}
+
+.content section:target {
+    display: block;
+}
+
+.content p {
+    font-size: 19px;
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.tabs img {
+    width: 40px;  /* 원하는 크기로 설정 */
+    height: auto;
+}
+
+#interests img {
+    width: 300px;
+    height: auto;
 
     /* 인라인-블락을 선택할 수 있음 */
     display: block;
     margin: 0 auto;
 }
 
-h1 {
-    text-align: center;
-    font-size: 50px;
+#interests a {
+    text-decoration: none;
 }
 
-h3 {
-    text-align: center;
+#playlist img {
+    width: 400px;
+
+    display: block;
+    margin: 0 auto;
 }
 
-legend {
-    font-weight: bold;
+
+
+
+.main img {
+    width: 1000px;
+    display: block;
+    margin: 0 auto;
 }
 
-button {
-    border: 1px solid black;
-    text-decoration: underline;
-    color: white;
-}
-
-.button1 {
-    background-color: orange;
-}
-
-.button2 {
-    background-color: gray;
-}
-
-textarea {
-    size: 300px 300px
+.main {
+    background-color: rgb(72, 231, 255);
 }
